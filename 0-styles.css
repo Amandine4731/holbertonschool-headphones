@@ -1,0 +1,117 @@
+:root {
+    /* Colors */
+    --color-white: #ffffff;
+    --color-dark-bleu: #071629;
+    --color-orange: #FF6565;
+
+    /* Fonts */
+    --font: 'Source Sans Pro', sans-serif;
+    --weight-regular: 300;
+    --weight-semibold: 550;
+    --weight-bold: 700;
+    --letter-spacing: 0.4px;
+    --line-height: 26px;
+
+    /* size */
+    --max-width-content: 1000px;
+
+    /* Responsivity */
+    --desktop-middle-with: 767px:
+    --mobile-width: 480px;
+
+    /* Hover */
+    --links-hover-color: #FF6565;
+    --button-hover-opacity: opacity: 0.9;
+}
+
+/* General
+============================= */
+body {
+    font-family: var(--font);
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+}
+
+
+/* Header & Hero
+============================= */
+.header-hero-background {
+    background-image: url("images/headphones_hero_1.jpg");
+    background-position: top;
+    background-size: 100rem, auto, contain;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding-top: 28px;
+    padding-bottom: 80px;
+}
+
+.header-hero-background .header-hero-content{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--max-width-content);
+}
+
+/* Header*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 330px;
+}
+
+.navbar a{
+    font-weight: var(--weight-semibold);
+    font-size: 12px;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.navbar #link1::after, .navbar #link2::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+}
+
+.navbar a:hover{
+    color: var(--links-hover-color);
+}
+
+/* Hero section*/
+.section-hero h1 {
+    font-family: var(--font);
+    font-weight: var(--weight-bold);
+    font-size: 32px;
+    color: var(--color-white);
+}
+
+.section-hero p {
+    font-weight: var(--weight-bold);
+    font-size: 16px;
+    color: var(--color-white);
+}
+
+.section-hero button {
+    width: 162px;
+    height: 44px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: auto;
+    font-weight: var(--weight-regular);
+    font-size: 14px;
+    color: white;
+    background-color: var(--color-orange);
+    border-radius: 100px;
+    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.5);
+    border-style: none;
+    letter-spacing: var(--letter-spacing);
+}
+
+.section-hero .hero-text p {
+    font-family: var(--font);
+    font-weight: var(--weight-regular);
+    font-size: 16px;
+    color: var(--color-white);
+}
