@@ -11,6 +11,8 @@
     --weight-bold: 700;
     --letter-spacing: 0.4px;
     --line-height: 26px;
+    --font-size-h2: 32px;
+    --font-size-p: 16px;
 
     /* size */
     --max-width-content: 944px;
@@ -18,7 +20,7 @@
 
     /* Hover */
     --links-hover-color: #FF6565;
-    --button-hover-opacity: opacity: 0.9;
+    --button-hover-opacity: 0.9;
 }
 
 /* General
@@ -58,7 +60,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 330px;
+    margin-bottom: 350px;
 }
 
 .navbar a{
@@ -80,6 +82,7 @@ header {
 
 /* Hero section*/
 .section-hero h1 {
+    margin-bottom: 0;
     font-weight: var(--weight-bold);
     font-size: 32px;
     color: var(--color-white);
@@ -87,7 +90,7 @@ header {
 
 .section-hero p {
     font-weight: var(--weight-bold);
-    font-size: 16px;
+    font-size: var(--font-size-p);
     color: var(--color-white);
 }
 
@@ -99,7 +102,7 @@ header {
     padding: auto;
     font-weight: var(--weight-regular);
     font-size: 14px;
-    color: white;
+    color: var(--color-white);
     background-color: var(--color-orange);
     border-radius: 100px;
     box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.5);
@@ -107,9 +110,13 @@ header {
     letter-spacing: var(--letter-spacing);
 }
 
+.section-hero button:hover {
+    opacity: var(--button-hover-opacity);
+}
+
 .section-hero .hero-text p {
     font-weight: var(--weight-regular);
-    font-size: 16px;
+    font-size: var(--font-size-p);
     color: var(--color-white);
     margin-right: auto;
     margin-left: auto;
@@ -133,6 +140,7 @@ header {
 
 .section-WWD h2 {
     margin-bottom: 40px;
+    font-size: var(--font-size-h2);
 }
 
 .section-WWD p {
@@ -188,6 +196,7 @@ header {
 
 .section-our-results .our-results-content h2 {
     margin-bottom: 40px;
+    font-size: var(--font-size-h2);
 }
 
 .section-our-results .our-results-content p {
@@ -250,3 +259,123 @@ header {
     width: 130px;
     margin-bottom: 25px;
 }
+
+/* Contact us
+============================= */
+
+.section-contact-us {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: var(--color-dark-bleu);
+}
+
+.section-contact-us h2 {
+    font-size: var(--font-size-h2);
+    margin-bottom: 70px;
+}
+
+.section-contact-us .contact-form {
+    font-size: 14px;
+    font-weight: var(--weight-semibold);
+}
+
+.section-contact-us .contact-form ul {
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+.section-contact-us .contact-form input,
+.section-contact-us .contact-form textarea {
+    margin-bottom: 50px;
+    width: 335px;
+    margin-left: auto;
+    margin-right: auto;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-dark-bleu);
+    opacity: 0.3;
+    display: block;
+}
+
+.section-contact-us .contact-form input:focus,
+.section-contact-us .contact-form textarea:focus {
+    background: transparent;
+    border: none;
+    display: block;
+    background-color: var(--color-orange);
+    opacity: 100%;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: var(--weight-semibold);
+    padding: 10px;
+}
+
+.section-contact-us .contact-form label {
+    width: 335px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: left;
+}
+
+.section-contact-us .contact-form .form-button button {
+    width: 162px;
+    height: 44px;
+    margin-top: 30px;
+    padding: auto;
+    font-weight: var(--weight-regular);
+    font-size: 14px;
+    color: var(--color-white);
+    background-color: var(--color-orange);
+    border-radius: 100px;
+    border-style: none;
+    letter-spacing: var(--letter-spacing);
+}
+
+.section-contact-us .contact-form .form-button button:hover {
+    opacity: var(--button-hover-opacity);
+}
+
+/* Footer
+============================= */
+
+footer {
+    background-color: var(--color-dark-bleu);
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+footer .footer .logo-icons-footer {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 28px;
+    padding-right: 28px;
+    max-width: var(--max-width-content);
+
+    margin-top: 60px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+footer .footer #SN1,
+footer .footer #SN2 {
+    margin-right: 20px;
+}
+
+footer p {
+    color: var(--color-white);
+    opacity: 50%;
+    font-size: 12px;
+    font-weight: var(--weight-regular);
+    text-align: center;
+}
+
