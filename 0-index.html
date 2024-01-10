@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width"/>
     <title>Headphones</title>
     <link rel="stylesheet" href="0-styles.css">
   </head>
@@ -9,14 +10,25 @@
     <div class="header-hero-background">
         <div class="header-hero-content">
         <header>
+            <div class="icon-menu">
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                    <span class='menu-button'></span>
+                </label>
+            </div>
             <div>
                 <a href="#"><img src="images/logo_headphones.png" width="160px"></a>
             </div>
             <div class="navbar">
-                <a id="link1" href="#section-WWD">what we do</a>
-                <a id="link2" href="#section-our-results">our results</a>
-                <a id="link3" href="#section-contact-us">contact us</a>
+                <label for="menu-toggle" class="menu-label">
+                <ul class="menu">
+                    <li><a id="link1" href="#section-WWD">what we do</a></li>
+                    <li><a id="link2" href="#section-our-results">our results</a></li>
+                    <li><a id="link3" href="#section-contact-us">contact us</a></li>
+                </ul>
+            </label>
             </div>
+            
         </header>
         <main>
             <section class="section-hero">
