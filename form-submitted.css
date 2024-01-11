@@ -48,6 +48,7 @@ p {
     color: var(--color-white);
     font-weight: var(--weight-regular);
     font-size: var(--font-size-p);
+    line-height: 25px;
 }
 
 button {
@@ -66,4 +67,11 @@ button {
 
 button:hover {
     background-color: #ff8282;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        margin-top: 50%;
+        margin-bottom: 50%;
+    }
 }

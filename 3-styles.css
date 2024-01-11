@@ -89,7 +89,6 @@ body {
     
 }
 
-
 .navbar #link1::after, .navbar #link2::after {
     content: "";
     display: inline-block;
